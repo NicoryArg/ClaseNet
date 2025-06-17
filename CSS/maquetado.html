@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carga de Productos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Carga de Productos</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Inicio</li>
+      <li>Productos</li>
+      <li>Inventario</li>
+      <li>Precios</li>
+      <li>Proveedores</li>
+    </ul>
+  </nav>
+
+<article>
+    <h2>Nuevo Producto</h2>
+
+    <label>Nombre del Producto</label>
+    <input type="text" placeholder="Ej: Detergente">
+
+    <label>Código</label>
+    <input type="text" placeholder="Ej: PROD001">
+
+    <label>Precio</label>
+    <input type="number" placeholder="Ej: 199.99">
+
+    <label>Categoría</label>
+    <select>
+        <option>Alimentos</option>
+        <option>Limpieza</option>
+        <option>Bebidas</option>
+        <option>Electrónica</option>
+    </select>
+
+    <label>Stock Inicial</label>
+    <input type="number" placeholder="Ej: 100">
+
+    <button class="btn guardar">Guardar</button>
+    <button class="btn cancelar">Cancelar</button>
+</article>
+
+
+  <aside>
+    <h3>Consejos</h3>
+    <p class="rojo">Usá códigos únicos para cada producto.</p>
+    <p>Verificá la categoría y el stock antes de guardar.</p>
+  </aside>
+
+  <footer>
+    Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

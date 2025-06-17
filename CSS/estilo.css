@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: darkslateblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header h1:hover {
+  color: violet;
+}
+
+nav {
+  background: teal;
+  padding: 10px;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: yellow;
+}
+
+article {
+  margin-top: 160px;
+  margin-left: 20px;
+  margin-right: 20%;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+article h2 {
+  text-align: center;
+  color: darkblue;
+}
+
+aside {
+  position: fixed;
+  top: 160px;
+  right: 0;
+  width: 20%;
+  background: lightgray;
+  height: 100%;
+  padding: 20px;
+}
+
+aside h3 {
+  color: darkred;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  border: 2px solid black;
+  padding: 8px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+/* Resaltar el 3er input */
+article input:nth-of-type(3) {
+  background-color: lightyellow;
+}
+
+.rojo {
+  color: red;
+}
+
+button.btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* botón Guardar */
+button.guardar {
+    background-color: green;
+    color: white;
+}
+
+/* botón Cancelar */
+button.cancelar {
+    background-color: crimson;
+    color: white;
+}
+
+/* mouse */
+button.btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: lightblue;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            margin-top: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        footer {
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Carga de Productos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Productos</li>
+            <li>Contactos</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Formulario</h2>
+        <label>Nombre del Producto:</label>
+        <input type="text" placeholder="Ej: Lápiz">
+
+        <label>Precio:</label>
+        <input type="number" placeholder="Ej: 50">
+
+        <label>Categoría:</label>
+        <select>
+            <option>Útiles</option>
+            <option>Libros</option>
+            <option>Electrónica</option>
+        </select>
+
+        <label>Stock:</label>
+        <input type="number" placeholder="Ej: 10">
+    </section>
+
+    <footer>
+        hola como te va
+    </footer>
+
+</body>
+</html>

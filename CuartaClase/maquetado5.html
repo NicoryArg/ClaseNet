@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado 3</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: darkslateblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav {
+            background: teal;
+            padding: 10px;
+            position: fixed;
+            top: 80px;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            padding: 10px;
+            color: white;
+        }
+        article {
+            margin-top: 160px;
+            margin-left: 20px;
+            margin-right: 20%;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        aside {
+            position: fixed;
+            top: 160px;
+            right: 0;
+            width: 20%;
+            background: lightgray;
+            height: 100%;
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        input, select {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 60%;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Carga de Productos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Productos</li>
+            <li>Inventario</li>
+            <li>Precios</li>
+            <li>Proveedores</li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Nuevo Producto</h2>
+        <label>Nombre del Producto</label>
+        <input type="text" placeholder="Ej: Detergente">
+
+        <label>Código</label>
+        <input type="text" placeholder="Ej: PROD001">
+
+        <label>Precio</label>
+        <input type="number" placeholder="Ej: 199.99">
+
+        <label>Categoría</label>
+        <select>
+            <option>Alimentos</option>
+            <option>Limpieza</option>
+            <option>Bebidas</option>
+            <option>Electrónica</option>
+        </select>
+
+        <label>Stock Inicial</label>
+        <input type="number" placeholder="Ej: 100">
+    </article>
+
+    <aside>
+        <h3>Consejos</h3>
+        <p>Usá códigos únicos para cada producto.</p>
+        <p>Verificá la categoría y el stock antes de guardar.</p>
+    </aside>
+
+    <footer>
+         Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

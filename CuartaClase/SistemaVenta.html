@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado 2</title>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+        }
+        input{
+            border: 2px solid black;            
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            }
+        li {
+            color: white;
+            padding: 8px;
+            float: left;
+            }
+        header {
+            background: red;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: red;
+        }
+        nav {
+            background: blue;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            top: 100px;
+            left: 0;
+        }
+        article {
+            position: fixed;            
+            background: yellow;
+            top: 150px;
+            left: 0;
+            height: 100%;
+            width: 80%;
+        }
+        aside{
+            background: gray;
+            position: fixed;
+            top: 150px;
+            right: 0;
+            height: 100%;
+            width: 20%;
+        }
+        footer {
+            background: green;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Ventas</h1>       
+    </header>
+    <nav>             
+        <ul>
+            <li>Inicio</li>
+            <li>Clientes</li>
+            <li>Productos</li>
+            <li>Ventas</li>
+            <li>Reportes</li>
+        </ul>
+
+    </nav>
+    <article>
+        <h2>Alta Cliente </h2>
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre del Cliente" required>
+        <label for="">CUIT</label>
+        <input type="text" placeholder="CUIT" width="20px">
+        <br> <br>
+        <label for="">Domicilio</label>
+        <input type="text" placeholder="Domicilio" width="20px">
+        <label for="">Telefono</label>
+        <input type="text" placeholder="Telefono" width="20px">
+        <br> <br>
+        <label for="">Email</label>
+        <input type="email" placeholder="Email" width="20px">
+        <label for="">CUIT</label>
+        <input type="text" placeholder="CUIT" width="20px">
+        <label for="">Tipo Cliente : </label>
+        <select name="" id="">
+            <option value="opcion1">Responsable Inscripto</option>
+            <option value="opcion2">Monotributista</option>
+            <option value="opcion3">Consumidor Final</option>
+        </select>
+
+    </article>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>

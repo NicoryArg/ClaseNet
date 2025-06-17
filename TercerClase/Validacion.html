@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+</head>
+<body>
+    <form action="Validacion.html" method="get">
+        <!-- Atributos de imput -->
+        <h1>Validaciones </h1>              
+        <label for="">Placeholder:</label>
+        <input type="text" placeholder="Ingrese texto" />
+        <br><br>        
+        
+        <label for="">AutoFocus:</label>
+        <input type="text" AutoFocus/>
+        <br><br>      
+        
+        <label for="">AutoComplete off:</label>
+        <input type="text" autocomplete="off"/>
+        <br><br>
+
+        <label for="">Select:</label>
+        <select>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <br><br>
+
+        <label for="">Select Multiple:</label>
+        <select multiple>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+            <option value="opcion4">Opción 4</option>
+        </select>
+        <br><br>
+        
+        <label for="">Required:</label>
+        <input type="text" placeholder="Ingrese texto" required/>
+        <br><br>
+        
+        <label for="">Disable:</label>
+        <input type="text" placeholder="Ingrese texto" disabled/>
+        <br><br>
+        
+        <label for="">ReadOnly:</label>
+        <input type="text" value="Texto escrito por el Usuario" readonly/>
+        <br><br>
+        
+        <label for="">Tipo Number:</label>
+        <input type="number" placeholder="5 a 20" min="5" max="20"/>
+        <br><br>
+        <label for="">Password</label>
+        <input type="password" placeholder="Ingrese contraseña" min="5" maxlength="8"/>
+        <br><br>
+        <label for="">Patron</label>
+        <input type="text" pattern="[A-Z]{2}[0-9]{3}" placeholder="Patron" title="Dos letras y tres numeros"/>
+        <br><br>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
