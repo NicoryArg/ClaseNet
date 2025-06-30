@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        article{
+            border: 1px solid red;
+            margin-bottom: 100px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            margin:10px;
+            border: 1px solid blue;
+            text-align: center ;
+        }
+
+        /*DESPLIEGUE EN BLOQUE*/
+        .bloque{
+            display: block; /*por defecto es block*/            
+        }
+        /*DESPLIEGUE EN LINEA*/
+        .enlinea{
+            display: inline-block; /*cambia el despliegue a en linea*/
+        }
+        /*DESPLIEGUE EN TABLA*/
+        .enTabla{
+            display: table-cell; /*cambia el despliegue a tabla*/   
+        }
+        /*DESPLIEGUE RELATIVO*/
+        #relativo{
+            position: relative; /*cambia el despliegue a relativo*/
+            left: 300px; /*desplaza el elemento 300px a la derecha*/
+            top: 50px; /*desplaza el elemento 100px hacia abajo*/
+        }
+        /*DESPLIEGUE ABSOLUTO*/
+        #absoluto{ 
+            position: absolute; 
+            right: 50px; /*desplaza el elemento 50px a la derecha del borde derecho del contenedor*/
+        }
+        /*DESPLIEGUE FIJO*/
+        #fijo{
+            position: fixed; /*cambia el despliegue a fijo*/
+            background: blue; /*fija el elemento al borde inferior de la ventana del navegador*/
+            right: 100px; /*fija el elemento al borde izquierdo de la ventana del navegador*/
+            top: 200px; 
+           
+        }
+        /*DESPLIEGUE FLOTANTE*/
+        .flotante{            
+            width: 100%;
+            height: 400px;
+        }
+        .flotante div{
+            float: left; /*cambia el despliegue a flotante*/
+           
+        }
+        .flotante div:nth-child(2){
+            float:right; /*cambia el despliegue a flotante a la derecha*/
+        }
+        </style>
+
+</head>
+<body>
+    <article class="bloque">
+        <h1>DESPLIEGUE EN BLOQUE</h1>
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+    <article class="enlinea">
+        <h1>DESPLIEGUE EN LINEA</h1>
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+    <article class="enTabla">
+        <h1>DESPLIEGUE EN TABLA</h1>
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+    <article>
+        <h1>DESPLIEGUE EN RELATIVO</h1>
+        <div id="relativo">UNO</div>
+        <div id="relativo">DOS</div>
+        <div id="relativo">TRES</div>
+        <div id="relativo">CUATRO</div>
+    </article>
+    <article>
+        <h1>DESPLIEGUE EN ABSOLUTO</h1>
+        <div id="absoluto">UNO</div>
+        <div>DOS</div>
+        <div id="absoluto">TRES</div>
+        <div>CUATRO</div>
+    </article>
+        <article>
+        <h1>DESPLIEGUE EN FIJO</h1>
+        <!--<div id="fijo">UNO</div>
+        <div>DOS</div>
+        <div id="fijo">TRES</div>
+        <div>CUATRO</div>-->
+    </article>
+        </article>
+        <article class="flotante">
+        <h1>DESPLIEGUE EN FLOTANTE</h1>
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+        
+
+
+</body>
+</html>
