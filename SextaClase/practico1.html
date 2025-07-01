@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Practico</h1>
+    <button onclick="pedirDato()">Ingresar dato</button>
+    <input type="text" id="resultado" >
+    <script>
+        
+        function pedirDato() {
+            var valor = prompt("Ingrese un dato:");
+           
+                document.getElementById("resultado").value = valor;
+         }
+        function mostrarDato() {
+            var valor = document.getElementById("resultado").value;
+            alert("El dato ingresado es: " + valor);
+        }
+            
+    </script>
+</body>
+</html>

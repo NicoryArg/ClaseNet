@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        //Tipos de variables
+        //Variables numericas , Tipo Enteros/integer, decimales/float
+        var edad = 25; // Entero
+        var decimal = 1.75; // Float
+
+    //operaciones
+        var  suma = 5+30;
+        var resta = 50-20;
+        var multiplicacion = 10*5;  
+        var division = 100/5;
+        var modulo = 10 % 3; // Resto de la division
+    
+        //variables de texto, Tipo String, caracteres
+        var nombre = "Horacio";
+        var apellido = "Gonzalez";
+        var nombreCompleto = apellido + ", " + nombre; // Concatenacion de cadenas
+
+        //variable Tipo Array/arreglo => conjunto de elementos
+        var lenguajes = ["JavaScript", "Python", "Java", "C++", "C#"];
+            //posicion     0       //   1     //   2 //   3 //   4
+
+        //document.write(lenguajes);
+        //document.write("<br>"); // Salto de línea
+        //document.write(lenguajes[0]); // Salto de línea
+        //document.write("<br>"); // Salto de línea
+        //document.write(lenguajes[4]); // Salto de línea
+
+        //objetos
+        var persona = {
+            nombre: "Horacio",
+            apellido: "Gonzalez",
+            edad: 25,
+            lenguajes: ["JavaScript", "Python", "Java"]
+        };
+
+        //document.write("Nombre: " + persona.nombre + "<br>");
+        //document.write("Apellido: " + persona.apellido + "<br>");
+        //document.write("Lenguaje: " + persona.lenguajes[1] + "<br>");
+
+        //Variables booleanas
+        var esEstudiante = true; // Verdadero
+        var tieneTrabajo = false; // Falso
+
+        //Variables indefinidas
+        var variableIndefinida; // No se ha asignado un valor
+        //document.write("Variable indefinida: " + variableIndefinida + "<br>");
+
+        variableIndefinida = "Ahora tiene un valor";
+        //document.write("Variable indefinida: " + variableIndefinida + "<br>");
+
+        //Tipos de datos especiales
+        let nulo = 10; // Representa la ausencia de valor
+        //nulo = "es un string ahora"; // Puede cambiar a otro tipo
+        document.write("Valor nulo: " + nulo + "<br>");
+        nulo = nulo + 5; // Puede ser modificado
+        document.write("Valor nulo modificado: " + nulo + "<br>");
+
+
+    </script>
+    
+</body>
+</html>
