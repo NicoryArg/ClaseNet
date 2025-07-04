@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional If else</title>
+</head>
+<body>
+    <script>
+        
+        /*  tabla de verdad
+
+        | A  |  B  |   AND | OR |
+        | F  |  F  |  F    | F |  
+        | V   | F  |  F    | V |      
+        | F   | V  |  F    | V  |     
+        | V  | V   |  V    | V   |      
+
+        | A  | NOT |
+        | F  |  V  |
+        | V  |  F  |
+        
+
+        var A =1;
+        var B = 3;
+            v    y   f
+        if(A == 1 && B!=2)//(condicion)
+        {
+            sentencia1
+        }
+        else 
+        {
+            sentencia2
+        }
+
+
+        * AND = & = Y => SOLO ES VERDADERO SI LOS VALORES COMPARADOS  SON VERDADEROS
+        * OR = | = O =>  EL VALOR ES VERDADERO EXISTE AL MENOS UN VERDADERO EN LOS VALORES      COMPARDOS
+        * XOR = ^ = XO => SOLO UN VALOR DEBE SER VERDADERO 
+        * NOT = ! = NO => NEGACION DE UN VALOR
+
+        */
+
+        var usuario = prompt("Ingrese Usuario");
+        var pass = prompt("Ingrese contraseña")
+        var mensaje="";
+
+        if(usuario=="Horacio" && pass=="12345")
+        {
+            mensaje = "Usuario y Clave correcta";
+        }
+        else{
+            if()
+                {
+
+                }
+            else
+                {
+                    if()
+                        {
+
+                        }
+                    else
+                    {
+
+                    }
+                }
+        }
+        }
+        else if (usuario == "Horacio" && pass!="12345")
+        {
+            mensaje="Usuario correcto y contraseña incorrecta";
+        }
+        else if(usuario != "Horacio" && pass=="12345")
+        {
+            mensaje="Usuario incorrecto y contraseña correcta"
+        }
+        else
+        {
+            mensaje="Usuario y contraseña es incorrecta";
+        }
+
+        document.write(mensaje);
+
+    </script>
+</body>
+</html>

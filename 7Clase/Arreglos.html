@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+        //Declarar arreglos
+         //              0           1        2       3
+        var colores = ["amarillo", "verde", "rojo", "azul"];
+        document.write(colores,"<br>");
+
+        //acceder a un elemento del arreglo
+        document.write(colores[4], "<br>")
+        
+        //agregar un elemento
+        colores[4] = "negro";
+        document.write(colores[4], "<br>")
+        document.write(colores,"<br>");            
+        colores.push("rosa","blanco", "naranja");
+        document.write(colores,"<br>");
+        colores[4]="gris";
+        document.write(colores,"<br>");
+        
+        //longitud de mun arreglo
+        var longitudArreglo = colores.length;
+        document.write(longitudArreglo,"<br>");
+        colores[longitudArreglo] = "violeta";
+        document.write(colores,"<br>");
+        
+        //Concatenar arreglos
+        var colores2 = ["verdeAgua", "negro", "celeste", "marron"]
+        var colores3 = ["fucsia", "turquesa", "cian", "salmon"]
+        var todosLosColores = colores.concat(colores2,colores3);
+        document.write(todosLosColores,"<br>");
+
+        //Eliminar elementos
+           colores.pop(); //elimina el ultimo elemento
+           document.write(colores,"<br>");
+
+           colores.splice(4)
+           document.write(colores,"<br>");
+
+           var color1 = colores.shift()
+            document.write(color1,"<br>");
+            color1 = colores.shift();
+            document.write(color1,"<br>");
+
+         //cambiar de estilo 
+         var nuevoArreglo = todosLosColores.join(" | ");
+         document.write(nuevoArreglo,"<br>");
+
+         //Ordenar un arreglo Alfabeticamente
+         var arregloOrdenado = todosLosColores.sort();
+         document.write(arregloOrdenado, "<br>")
+
+         var memoria = [1,2,3,4]
+
+         document.writeln(memoria.join(" | "))
+
+    </script>
+</body>
+</html>
