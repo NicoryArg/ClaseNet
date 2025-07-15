@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="nombre" placeholder="Escribe tu nombre">
+	<button onclick="imprimir()">Imprimir</button>
+	<br>
+	<label id="nombreImpreso"></label>
+
+	<script>
+        function imprimir(){
+             var name = document.getElementById("nombre").value;
+             console.log(name)
+             var mensaje = document.getElementById("nombreImpreso");
+             mensaje.textContent = "Hola !!! " + name ;
+       }
+	</script>
+</body>
+</html>

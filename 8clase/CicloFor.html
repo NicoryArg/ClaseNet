@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo FOR</title>
+</head>
+<body>
+    <script>
+       /* document.write(1,"<br>");
+        document.write(2,"<br>");
+        document.write(3,"<br>");
+        document.write(4,"<br>");
+        document.write(5,"<br>");*/
+        
+        //  variable - Condicion - incremento
+        /*for(i=0; i <=100; i++)
+        {
+            document.write(i + "<br>");
+        }*/
+
+        /*var longitud = prompt("Ingrese la cantidad de repeticion")
+        
+        for(i=0; i <= longitud; i++)
+        {
+            document.write(i + "<br>");
+        }*/
+                        //    0       1       2       3           4       5          6   
+        /*var colores = ["Amarillo", "Azul", "Verde", "Blanco", "Negro", "Naranja", "Rosa"]
+        var longitud = colores.length;
+        document.write(longitud, "<br>");
+        
+        for(i=0; i < longitud; i++)
+        {
+            document.write(i +"-" + colores[i] + "<br>");
+        }*/
+
+        /* Ejercicio 
+        * Mostrar la resta de la multiplicacion de 
+        * los numeros del 1 al 5 con 
+        * la suma de los numeros del 1 al 5
+        * por ejemplo, seria (1*2*3*4*5)-(1+2+3+4+5)
+        */
+       
+       /* var suma =0;
+        var mult = 1;
+
+        for(i=1; i<=5; i++)
+        {
+            suma += i; // suma = suma + 1;
+            document.write("valor suma =" + suma + "-"+ "valor i ="+ i , "<br>")
+            mult *= i // mult = mult * i;
+            document.write("valor mult =" + mult + "-"+ "valor i ="+ i, "<br>")
+
+        }
+        document.write("Resultado suma = "+ suma, "<br>");
+        document.write("Resultado mult = "+ mult,"<br>");
+        document.write("Resultado Final = "+ (mult - suma));
+        */
+        /* Ejercicio
+        * imprimir la siguiente figura
+        *
+        * 1 @
+        * 2 @@
+        * 3 @
+        * 4 @@
+        * 5 @
+        */
+        /*
+        for(i=1; i<=5; i++)
+        {
+            //document.write(i,"<br>");
+            if((i%2) !=0)
+            {                   
+                document.write(+i +"- @","<br>");
+            }
+            else
+            {
+                document.write(+i +"- @@","<br>");
+            }
+        }
+
+         var dibujo = "@"
+        /*
+         1 @
+         2 @@
+         3 @@@
+         4 @@@@
+         5 @@@@@
+        
+        for(i=1; i<=15; i++)
+        {
+
+        }*/
+
+        /*   12345 
+           1 @@@@@
+           2 @@@@
+           3 @@@
+           4 @@
+           5 @
+        */
+
+        var limiteJ = 5;
+
+        for(i=1;i<=5;i++)
+        {
+            document.write("valor i= "+i);
+            document.write("Limite J "+ limiteJ);
+            for(j=limiteJ;j>0; j--)
+            {
+                document.write("valor j= "+j);
+                document.write("@");
+            }
+            document.write("<br>");
+            limiteJ--;
+        }
+
+    </script>
+</body>
+</html>

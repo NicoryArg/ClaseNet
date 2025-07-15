@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="saludar()">Saludar</button>
+
+    <script>
+        function saludar(){
+            var nombre = prompt("por favor ingrese su nombre");
+            if(nombre!=null && nombre !=""){
+                alert("Hola!!! " + nombre);
+            }
+            else
+            {
+                alert("Usted no ingreso su nombre")
+            }
+        }
+    </script>
+</body>
+</html>

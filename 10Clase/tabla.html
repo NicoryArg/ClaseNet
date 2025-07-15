@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar registros a una tabla</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width:100%
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla Dinamica</h1>
+    <form id="miFormulario">
+        <label>Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre"> 
+        <br><br>
+        <label>Edad</label>
+        <input type="text" id="edad" name="edad"> 
+        <br><br>
+        <label>DNI</label>
+        <input type="text" id="dni" name="dni"> 
+        <br><br>
+        <label>Email</label>
+        <input type="text" id="email" name="email"> 
+        <br><br>
+        <button type="button" onclick="agregarFilas()">Agregar</button>
+        <br><br>
+    </form>
+    <table id="miTabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>DNI</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+
+        function agregarFilas() {
+                //obtener los valores de los campos
+                var nombreCompleto = document.getElementById("nombre").value;
+                var edad = document.getElementById("edad").value;
+                var dni = document.getElementById("dni").value;
+                var email = document.getElementById("email").value;
+
+                //validar campos
+                if(nombreCompleto ==="" || edad==="" || dni==="" || email==="")
+                {
+                    alert("Por favor, complete todos los campos");
+                    return;
+                }
+
+                //cargar una nueva fila
+                var tabla = document.getElementById("miTabla").getElementsByTagName("tbody")[0];
+                var nuevaFila = tabla.insertRow();
+
+                //crear celdas y asignar los valores
+                var celdaNombre = nuevaFila.insertCell(0);
+                var celdaEdad = nuevaFila.insertCell(1);
+                var celdaDni = nuevaFila.insertCell(2);
+                var celdaEmail = nuevaFila.insertCell(3);
+
+                celdaNombre.textContent = nombreCompleto;
+                celdaEdad.textContent = edad;
+                celdaDni.textContent = dni;
+                celdaEmail.textContent = email;
+
+                //limpiar los campos del formulario
+                document.getElementById("miFormulario").reset();
+         }
+    </script>
+</body>
+</html>
