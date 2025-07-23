@@ -1,0 +1,14 @@
+D:\Digitalers\CSharp\Clase1Cs\Clase2\bin\Debug\net9.0\Clase2.exe
+D:\Digitalers\CSharp\Clase1Cs\Clase2\bin\Debug\net9.0\Clase2.deps.json
+D:\Digitalers\CSharp\Clase1Cs\Clase2\bin\Debug\net9.0\Clase2.runtimeconfig.json
+D:\Digitalers\CSharp\Clase1Cs\Clase2\bin\Debug\net9.0\Clase2.dll
+D:\Digitalers\CSharp\Clase1Cs\Clase2\bin\Debug\net9.0\Clase2.pdb
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.AssemblyInfoInputs.cache
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.AssemblyInfo.cs
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.csproj.CoreCompileInputs.cache
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.dll
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\refint\Clase2.dll
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.pdb
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\Clase2.genruntimeconfig.cache
+D:\Digitalers\CSharp\Clase1Cs\Clase2\obj\Debug\net9.0\ref\Clase2.dll
